@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_memberof
+    - node.type.islandora_collection
+    - node.type.islandora_pdf
+id: node.islandora_pdf.field_memberof
+field_name: field_memberof
+entity_type: node
+bundle: islandora_pdf
+label: 'Member Of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      islandora_collection: islandora_collection
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

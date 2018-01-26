@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.islandora_pdf
+  module:
+    - user
+id: node.islandora_pdf.teaser
+targetEntityType: node
+bundle: islandora_pdf
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

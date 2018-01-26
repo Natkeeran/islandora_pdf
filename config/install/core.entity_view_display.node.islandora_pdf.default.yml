@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.islandora_pdf.field_description
+    - field.field.node.islandora_pdf.field_memberof
+    - field.field.node.islandora_pdf.field_pdf_file
+    - node.type.islandora_pdf
+  module:
+    - user
+id: node.islandora_pdf.default
+targetEntityType: node
+bundle: islandora_pdf
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_memberof:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_pdf_file:
+    weight: 3
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

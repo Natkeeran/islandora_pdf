@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains islandora_pdf.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function islandora_pdf_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the islandora_pdf module.
+    case 'help.page.islandora_image':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Islandora Pdf') . '</p>';
+      return $output;
+
+    default:
+  }
+}

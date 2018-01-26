@@ -1,0 +1,10 @@
+name: islandora_pdf
+type: module
+description: Islandora Pdf
+core: 8.x
+package: islandora
+dependencies:
+  - islandora_collection
+  - pdf
+
+
